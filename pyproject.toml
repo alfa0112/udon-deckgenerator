@@ -22,4 +22,4 @@ dynamic = ["version"]
 version = {attr = "udon_deckgen.__version__.__version__"}
 
 [project.scripts]
-udon-deckgen = "udon_deckgen.main:main"
+udon-deckgen = "udon_deckgen.__main__:main"
