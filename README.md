@@ -39,3 +39,7 @@ udon-deckgen --output-tamplate
 ```bash
 udon-deckgen define_csv image_dir output_dir
 ```
+
+## License
+
+[MIT License](https://github.com/alfa0112/pyudon/blob/master/LICENSE)
