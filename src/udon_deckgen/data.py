@@ -48,12 +48,13 @@ class DeckDefine:
         for row_dict in self._df.rows(named=True):
             image_top = image_dict.get_image(row_dict["image_top"])
             image_bottom = image_dict.get_image(row_dict["image_bottom"])
-            cards.append(pyudon.Card(
+            card = pyudon.Card(
                 row_dict["name"],
                 image_top,
                 image_bottom,
                 card_size
-            ))
+            )
+            cards.extend([card]*row_dict["number_of"])
         deck = pyudon.Deck(self._name, cards)
 
         return deck
